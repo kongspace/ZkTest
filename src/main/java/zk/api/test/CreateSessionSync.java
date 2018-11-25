@@ -17,7 +17,6 @@ public class CreateSessionSync implements Watcher {
         if(watchedEvent.getState().equals(Event.KeeperState.SyncConnected)) {
             doBus();
         }
-        System.out.println("接收内容："+watchedEvent.toString());
     }
 
     private void doBus() {
